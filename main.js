@@ -155,9 +155,10 @@ function validateAll() {
     password: userPass.value,
   };
   const entries = Object.entries(inputValues);
+  console.log("🚀 ~ validateAll ~ entries:", entries);
 
   for (const [key, value] of entries) {
-    document.cookie = `${key}=${value}`;
+    document.cookie = `${key}=${value};`;
   }
   var cookies = document.cookie.split(";").map((cookie) => cookie.split("="));
   console.log(cookies);
