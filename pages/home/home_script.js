@@ -23,8 +23,6 @@ const sliderData = [
 ];
 
 let allProducts_btns = document.querySelectorAll(".products_btn");
-console.log(allProducts_btns);
-
 let content = document.querySelector(".content");
 
 function renderProducts(products) {
@@ -62,7 +60,7 @@ fetch("../data.json")
     allProducts_btns.forEach((btn) => {
       btn.addEventListener("click", () => {
         let category = btn.innerText;
-        if (category === "all") {
+        if (category === "All") {
           renderProducts(products);
         } else {
           let filtered = products.filter((p) => p.category === category);
