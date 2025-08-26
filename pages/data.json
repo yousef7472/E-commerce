@@ -1,0 +1,258 @@
+[
+  {
+    "id": 1,
+    "title": "FLOWER VASE",
+    "description": "A high-performance smartphone with a stunning display and advanced camera.",
+    "price": 799.99,
+    "discountPercentage": 10.5,
+    "rating": 4.5,
+    "stock": 150,
+    "brand": "TechCo",
+    "category": "VASES",
+    "thumbnail": "https://plus.unsplash.com/premium_photo-1709648420094-8f5c543ce667?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "images": [
+      "https://example.com/images/smartphone-x-1.jpg",
+      "https://example.com/images/smartphone-x-2.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "POTTERY VASE",
+    "description": "Powerful laptop for professionals with a large screen and long battery life.",
+    "price": 1299.0,
+    "discountPercentage": 5.0,
+    "rating": 4.8,
+    "stock": 75,
+    "brand": "ProMachines",
+    "category": "VASES",
+    "thumbnail": "https://plus.unsplash.com/premium_photo-1709648420094-8f5c543ce667?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "images": [
+      "https://example.com/images/laptop-pro-1.jpg",
+      "https://example.com/images/laptop-pro-2.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "FLOWER VASE",
+    "description": "Compact and comfortable earbuds with crystal-clear audio and noise cancellation.",
+    "price": 149.99,
+    "discountPercentage": 0.0,
+    "rating": 4.2,
+    "stock": 300,
+    "brand": "AudioWave",
+    "category": "VASES",
+    "thumbnail": "https://example.com/images/earbuds-thumbnail.jpg",
+    "images": [
+      "https://example.com/images/earbuds-1.jpg",
+      "https://example.com/images/earbuds-2.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "FLOWER VASE",
+    "description": "A high-performance smartphone with a stunning display and advanced camera.",
+    "price": 799.99,
+    "discountPercentage": 10.5,
+    "rating": 4.5,
+    "stock": 150,
+    "brand": "TechCo",
+    "category": "VASES",
+    "thumbnail": "https://plus.unsplash.com/premium_photo-1709648420094-8f5c543ce667?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "images": [
+      "https://example.com/images/smartphone-x-1.jpg",
+      "https://example.com/images/smartphone-x-2.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "POTTERY VASE",
+    "description": "Powerful laptop for professionals with a large screen and long battery life.",
+    "price": 1299.0,
+    "discountPercentage": 5.0,
+    "rating": 4.8,
+    "stock": 75,
+    "brand": "ProMachines",
+    "category": "VASES",
+    "thumbnail": "https://plus.unsplash.com/premium_photo-1709648420094-8f5c543ce667?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "images": [
+      "https://example.com/images/laptop-pro-1.jpg",
+      "https://example.com/images/laptop-pro-2.jpg"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "DECO ACCESSORY",
+    "description": "A high-performance smartphone with a stunning display and advanced camera.",
+    "price": 799.99,
+    "discountPercentage": 10.5,
+    "rating": 4.5,
+    "stock": 150,
+    "brand": "TechCo",
+    "category": "BASICS",
+    "thumbnail": "https://plus.unsplash.com/premium_photo-1709648420094-8f5c543ce667?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "images": [
+      "https://example.com/images/smartphone-x-1.jpg",
+      "https://example.com/images/smartphone-x-2.jpg"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "WALL CLOCK",
+    "description": "Powerful laptop for professionals with a large screen and long battery life.",
+    "price": 1299.0,
+    "discountPercentage": 5.0,
+    "rating": 4.8,
+    "stock": 75,
+    "brand": "ProMachines",
+    "category": "BASICS",
+    "thumbnail": "https://plus.unsplash.com/premium_photo-1709648420094-8f5c543ce667?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "images": [
+      "https://example.com/images/laptop-pro-1.jpg",
+      "https://example.com/images/laptop-pro-2.jpg"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "NEWSPAPER STORAGE",
+    "description": "Compact and comfortable earbuds with crystal-clear audio and noise cancellation.",
+    "price": 149.99,
+    "discountPercentage": 0.0,
+    "rating": 4.2,
+    "stock": 300,
+    "brand": "AudioWave",
+    "category": "BASICS",
+    "thumbnail": "https://example.com/images/earbuds-thumbnail.jpg",
+    "images": [
+      "https://example.com/images/earbuds-1.jpg",
+      "https://example.com/images/earbuds-2.jpg"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "DECO ACCESSORY",
+    "description": "A high-performance smartphone with a stunning display and advanced camera.",
+    "price": 799.99,
+    "discountPercentage": 10.5,
+    "rating": 4.5,
+    "stock": 150,
+    "brand": "TechCo",
+    "category": "BASICS",
+    "thumbnail": "https://plus.unsplash.com/premium_photo-1709648420094-8f5c543ce667?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "images": [
+      "https://example.com/images/smartphone-x-1.jpg",
+      "https://example.com/images/smartphone-x-2.jpg"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "WALL CLOCK",
+    "description": "Powerful laptop for professionals with a large screen and long battery life.",
+    "price": 1299.0,
+    "discountPercentage": 5.0,
+    "rating": 4.8,
+    "stock": 75,
+    "brand": "ProMachines",
+    "category": "BASICS",
+    "thumbnail": "https://plus.unsplash.com/premium_photo-1709648420094-8f5c543ce667?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "images": [
+      "https://example.com/images/laptop-pro-1.jpg",
+      "https://example.com/images/laptop-pro-2.jpg"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "NEWSPAPER STORAGE",
+    "description": "Compact and comfortable earbuds with crystal-clear audio and noise cancellation.",
+    "price": 149.99,
+    "discountPercentage": 0.0,
+    "rating": 4.2,
+    "stock": 300,
+    "brand": "AudioWave",
+    "category": "BASICS",
+    "thumbnail": "https://example.com/images/earbuds-thumbnail.jpg",
+    "images": [
+      "https://example.com/images/earbuds-1.jpg",
+      "https://example.com/images/earbuds-2.jpg"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "TABLE LAMP",
+    "description": "Powerful laptop for professionals with a large screen and long battery life.",
+    "price": 280.0,
+    "discountPercentage": 5.0,
+    "rating": 4.8,
+    "stock": 75,
+    "brand": "ProMachines",
+    "category": "LIGHTING",
+    "thumbnail": "https://plus.unsplash.com/premium_photo-1709648420094-8f5c543ce667?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "images": [
+      "https://example.com/images/laptop-pro-1.jpg",
+      "https://example.com/images/laptop-pro-2.jpg"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "TABLE LAMP",
+    "description": "Powerful laptop for professionals with a large screen and long battery life.",
+    "price": 280.0,
+    "discountPercentage": 5.0,
+    "rating": 4.8,
+    "stock": 75,
+    "brand": "ProMachines",
+    "category": "LIGHTING",
+    "thumbnail": "https://plus.unsplash.com/premium_photo-1709648420094-8f5c543ce667?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "images": [
+      "https://example.com/images/laptop-pro-1.jpg",
+      "https://example.com/images/laptop-pro-2.jpg"
+    ]
+  },
+  {
+    "id": 14,
+    "title": "TABLE LAMP",
+    "description": "Powerful laptop for professionals with a large screen and long battery life.",
+    "price": 280.0,
+    "discountPercentage": 5.0,
+    "rating": 4.8,
+    "stock": 75,
+    "brand": "ProMachines",
+    "category": "LIGHTING",
+    "thumbnail": "https://plus.unsplash.com/premium_photo-1709648420094-8f5c543ce667?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "images": [
+      "https://example.com/images/laptop-pro-1.jpg",
+      "https://example.com/images/laptop-pro-2.jpg"
+    ]
+  },
+  {
+    "id": 15,
+    "title": "STANDARD LAMP",
+    "description": "Powerful laptop for professionals with a large screen and long battery life.",
+    "price": 340.0,
+    "discountPercentage": 5.0,
+    "rating": 4.8,
+    "stock": 75,
+    "brand": "ProMachines",
+    "category": "LIGHTING",
+    "thumbnail": "https://plus.unsplash.com/premium_photo-1709648420094-8f5c543ce667?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "images": [
+      "https://example.com/images/laptop-pro-1.jpg",
+      "https://example.com/images/laptop-pro-2.jpg"
+    ]
+  },
+  {
+    "id": 16,
+    "title": "TABLE LAMP",
+    "description": "Powerful laptop for professionals with a large screen and long battery life.",
+    "price": 280.0,
+    "discountPercentage": 5.0,
+    "rating": 4.8,
+    "stock": 75,
+    "brand": "ProMachines",
+    "category": "LIGHTING",
+    "thumbnail": "https://plus.unsplash.com/premium_photo-1709648420094-8f5c543ce667?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "images": [
+      "https://example.com/images/laptop-pro-1.jpg",
+      "https://example.com/images/laptop-pro-2.jpg"
+    ]
+  }
+]
