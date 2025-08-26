@@ -54,7 +54,7 @@
           </div>
         </div>
       </nav>
-      <section>
+      <section class="container-fluid h-100 pb-md-5">
         <link
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@200;300;400;500;600&display=swap"
           rel="stylesheet"
@@ -82,7 +82,37 @@
         </div>
       </section>
     </header>
-    <section></section>
+    <section class="products m-lg-5">
+      <div class="category">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <button
+              class="btn p-md-3 active products_btn"
+              aria-current="page"
+              id="all_Products"
+            >
+              All
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="btn p-md-3 products_btn" id="basics_Products">
+              BASICS
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="btn p-md-3 products_btn" id="vases_Products">
+              VASES
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="btn p-md-3 products_btn" id="lighting_Products">
+              LIGHTING
+            </button>
+          </li>
+        </ul>
+        <section class="content w-100 row row-cols-3 g-md-5 m-auto"></section>
+      </div>
+    </section>
     <footer></footer>
     <script src="./home_script.js"></script>
     <script
