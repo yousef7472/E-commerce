@@ -22,13 +22,66 @@ const sliderData = [
   },
 ];
 
+let allProducts_btns = document.querySelectorAll(".products_btn");
+console.log(allProducts_btns);
+
+let content = document.querySelector(".content");
+
+function renderProducts(products) {
+  content.textContent = "";
+
+  products.forEach((elements) => {
+    let card = document.createElement("div");
+    card.classList.add("text-center");
+    content.appendChild(card);
+
+    let img = document.createElement("img");
+    img.src = elements.thumbnail;
+
+    let title = document.createElement("h3");
+    title.classList.add("mt-md-4");
+    title.textContent = elements.title;
+
+    let price = document.createElement("span");
+    price.textContent = `$${elements.price}`;
+    card.append(img, title, price);
+  });
+}
+
+//        fetch products from external json file
+fetch("../data.json")
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return response.json();
+  })
+  .then((products) => {
+    console.log("Fetched products:", products);
+    renderProducts(products);
+    allProducts_btns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        let category = btn.innerText;
+        if (category === "all") {
+          renderProducts(products);
+        } else {
+          let filtered = products.filter((p) => p.category === category);
+          renderProducts(filtered);
+        }
+      });
+    });
+  })
+  .catch((error) => {
+    console.error("Error fetching products:", error);
+  });
+
 const cardTrack = document.getElementById("card-track");
 const fullscreenBg = document.getElementById("fullscreen-bg");
 const fullscreenText = document.getElementById("fullscreen-text");
 let activeIndex = 0;
 let cards = [];
 
-// Create cards from JSON
+// Create cards from internal JSON for slider
 sliderData.forEach((item, index) => {
   const card = document.createElement("div");
   card.classList.add("card");
@@ -85,6 +138,3 @@ document.getElementById("nav-right").addEventListener("click", () => {
 
 // Initialize
 updateActiveCard();
-
-// Load icons
-lucide.createIcons();
