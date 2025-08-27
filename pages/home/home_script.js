@@ -28,22 +28,36 @@ let content = document.querySelector(".content");
 function renderProducts(products) {
   content.textContent = "";
 
-  products.forEach((elements) => {
+  products.forEach((element) => {
     let card = document.createElement("div");
-    card.classList.add("text-center");
+    card.classList.add("card_item", "text-center");
     content.appendChild(card);
-
+    let img_container = document.createElement("div");
+    img_container.classList.add("img");
     let img = document.createElement("img");
-    img.src = elements.thumbnail;
+    img.src = element.thumbnail;
+    img_container.appendChild(img);
 
     let title = document.createElement("h3");
     title.classList.add("mt-md-4");
-    title.textContent = elements.title;
+    title.textContent = element.title;
 
     let price = document.createElement("span");
-    price.textContent = `$${elements.price}`;
-    card.append(img, title, price);
+    price.textContent = `$${element.price}`;
+
+    let addToCard = document.createElement("span");
+    addToCard.textContent = `Add To Card`;
+
+    card.append(img_container, title, price, addToCard);
+    card.addEventListener("click", () => viewProduct_details(element.id));
   });
+  function viewProduct_details(id) {
+    const product = products.find((p) => p.id === id);
+
+    // Save it in localStorage
+    localStorage.setItem("selectedProduct", JSON.stringify(product));
+    window.location.href = `product/product.html?id=${id}`;
+  }
 }
 
 //        fetch products from external json file
