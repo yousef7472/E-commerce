@@ -86,9 +86,7 @@
                 <button type="button" id="increment">+</button>
               </span>
 
-              <button class="bg-black text-white" id="addToCard">
-                Add To Card
-              </button>
+              <button class="bg-black text-white" id="confirm">confirm</button>
             </form>
           </div>
         </div>
@@ -96,44 +94,6 @@
       <div class="totals col-4"></div>
     </section>
   </body>
-  <script>
-    let product_img = document.querySelector(".details .img img");
-    let content_container = document.querySelector(".content");
-    let product_title = document.querySelector("#title");
-    let product_price = document.querySelector("#price");
-    let homeBtn = document.querySelector("#home");
-    let incrementButton = document.querySelector("#increment");
-    let decrementButton = document.querySelector("#decrement");
-    let quantityInput = document.querySelector("#quantity");
-    let addToCardBtn = document.querySelector("#addToCard");
-    let addToCardLength = document.querySelector("#card_length span");
-    let logOut_btn = document.querySelector("#logOut");
-
-    logOut_btn.addEventListener("click", () => {
-      location.href = "../../../index.html";
-    });
-
-    incrementButton.addEventListener("click", () => {
-      quantityInput.value = parseInt(quantityInput.value) + 1;
-    });
-    decrementButton.addEventListener("click", () => {
-      quantityInput.value = parseInt(quantityInput.value) - 1;
-    });
-    let product = JSON.parse(localStorage.getItem("selectedProduct"));
-    homeBtn.addEventListener("click", (e) => {
-      e.preventDefault();
-      window.location.href = `../home.html`;
-    });
-    addToCardBtn.addEventListener("click", (e) => {
-      e.preventDefault();
-      addToCardLength.textContent = parseInt(localStorage.length);
-    });
-    if (product) {
-      product_img.src = `${product.thumbnail}`;
-      product_title.textContent = `${product.title}`;
-      product_price.textContent = `$${product.price}`;
-    } else {
-      document.body.innerHTML = "<p>No product found</p>";
-    }
-  </script>
+  <script src="checkout_script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </html>
