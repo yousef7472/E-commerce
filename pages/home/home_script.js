@@ -74,6 +74,8 @@ fetch("../data.json")
     allProducts_btns.forEach((btn) => {
       btn.addEventListener("click", () => {
         let category = btn.innerText;
+        allProducts_btns.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
         if (category === "All") {
           renderProducts(products);
         } else {
@@ -148,5 +150,4 @@ document.getElementById("nav-right").addEventListener("click", () => {
   scrollToCard(activeIndex);
 });
 
-// Initialize
 updateActiveCard();
