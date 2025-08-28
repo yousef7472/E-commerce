@@ -23,6 +23,10 @@ const sliderData = [
 ];
 
 let allProducts_btns = document.querySelectorAll(".products_btn");
+let allSort_btns = document.querySelectorAll("#sort_btns button");
+let allRange_btns = document.querySelectorAll("#price_range button");
+console.log(allRange_btns);
+
 let content = document.querySelector(".content");
 
 function renderProducts(products) {
@@ -71,11 +75,59 @@ fetch("../data.json")
   .then((products) => {
     console.log("Fetched products:", products);
     renderProducts(products);
+
+    //             sort items
+    allSort_btns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        if (btn.id === "average") {
+          let rating = [...products].sort((a, b) => b.rating - a.rating);
+          console.log(rating);
+          renderProducts(rating);
+        } else if (btn.id === "newest") {
+          let newest = [...products].sort(
+            (a, b) => new Date(b.release) - new Date(a.release)
+          );
+          console.log(newest);
+          renderProducts(newest);
+        } else if (btn.id === "highToLow") {
+          let highToLow = [...products].sort((a, b) => b.price - a.price);
+          renderProducts(highToLow);
+        } else {
+          let lowToHigh = [...products].sort((a, b) => a.price - b.price);
+          renderProducts(lowToHigh);
+        }
+      });
+    });
+    //             filter by price range
+    allRange_btns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        if (btn.id === "zero") {
+          let fromZero = products.filter((p) => p.price >= 0 && p.price <= 100);
+          renderProducts(fromZero);
+        } else if (btn.id === "oneHundred") {
+          let oneHundred = products.filter(
+            (p) => p.price >= 101 && p.price <= 200
+          );
+          renderProducts(oneHundred);
+        } else if (btn.id === "twoHundred") {
+          let twoHundred = products.filter(
+            (p) => p.price >= 201 && p.price <= 250
+          );
+          renderProducts(twoHundred);
+        } else {
+          let plus = products.filter((p) => p.price >= 251);
+          renderProducts(plus);
+        }
+      });
+    });
+
+    //        navigate between tab (category)
     allProducts_btns.forEach((btn) => {
       btn.addEventListener("click", () => {
         let category = btn.innerText;
         allProducts_btns.forEach((b) => b.classList.remove("active"));
         btn.classList.add("active");
+
         if (category === "All") {
           renderProducts(products);
         } else {

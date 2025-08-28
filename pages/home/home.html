@@ -121,12 +121,21 @@
               >
                 Price Range
               </button>
-              <ul class="dropdown-menu dropdown-menu-dark">
-                <li><a class="dropdown-item" href="#">$0 - $100</a></li>
-                <li><a class="dropdown-item" href="#">$100 - $200</a></li>
-                <li><a class="dropdown-item" href="#">$200 - $250</a></li>
-                <li><a class="dropdown-item" href="#">$200 - $250</a></li>
-                <li><a class="dropdown-item" href="#">$250 +</a></li>
+              <ul class="dropdown-menu dropdown-menu-dark" id="price_range">
+                <li>
+                  <button class="dropdown-item" id="zero">$0 - $100</button>
+                </li>
+                <li>
+                  <button class="dropdown-item" id="oneHundred">
+                    $100 - $200
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item" id="twoHundred">
+                    $200 - $250
+                  </button>
+                </li>
+                <li><button class="dropdown-item" id="plus">$250 +</button></li>
               </ul>
             </div>
             <div class="dropdown">
@@ -138,13 +147,27 @@
               >
                 Sort By
               </button>
-              <ul class="dropdown-menu dropdown-menu-dark">
-                <li><a class="dropdown-item" href="#">Average Rating</a></li>
-                <li><a class="dropdown-item" href="#">Newest</a></li>
+              <ul class="dropdown-menu dropdown-menu-dark" id="sort_btns">
                 <li>
-                  <a class="dropdown-item" href="#">Price: High To Low</a>
+                  <button class="dropdown-item" href="" id="average">
+                    Average Rating
+                  </button>
                 </li>
-                <li><a class="dropdown-item" href="#">Price: Low To Low</a></li>
+                <li>
+                  <button class="dropdown-item" href="" id="newest">
+                    Newest
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item" href="" id="highToLow">
+                    Price: High To Low
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item" href="" id="lowToHigh">
+                    Price: Low To High
+                  </button>
+                </li>
               </ul>
             </div>
           </div>
