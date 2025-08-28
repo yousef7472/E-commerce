@@ -186,7 +186,7 @@ function handleSubmit(e) {
       });
       successMessage.style.display = "none";
       formSubmitted = false;
-    }, 3000);
+    }, 1000);
   } else {
     // Shake form to indicate error
     document.querySelector(".container").classList.add("shake");
@@ -252,7 +252,7 @@ signIn_form.addEventListener("submit", (e) => {
   let savedPass = getCookie("password");
 
   if (email === savedEmail && password === savedPass) {
-    window.location.replace("home.html");
+    window.location.replace("pages/home/home.html");
   } else {
     alert("Invalid email or password!");
   }
