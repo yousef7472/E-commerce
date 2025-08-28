@@ -254,6 +254,10 @@ signIn_form.addEventListener("submit", (e) => {
   if (email === savedEmail && password === savedPass) {
     window.location.replace("pages/home/home.html");
   } else {
-    alert("Invalid email or password!");
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "invalid email or password!",
+    });
   }
 });
