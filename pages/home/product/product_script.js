@@ -6,12 +6,16 @@ let product_price = document.querySelector("#price");
 let product_rating = document.querySelector("#rating");
 let product_description = document.querySelector("#description");
 let homeBtn = document.getElementById("home");
-console.log(homeBtn);
+let logOut_btn = document.querySelector("#logOut");
 
 const incrementButton = document.querySelector("#increment");
 const decrementButton = document.querySelector("#decrement");
 const quantityInput = document.querySelector("#quantity");
 let addToCardBtn = document.querySelector("#addToCard");
+
+logOut_btn.addEventListener("click", () => {
+  location.href = "../../../index.html";
+});
 
 incrementButton.addEventListener("click", () => {
   quantityInput.value = parseInt(quantityInput.value) + 1;

@@ -17,10 +17,6 @@ a {
 }
 
 .img {
-  overflow: hidden;
-  &:hover img {
-    scale: 1.2;
-  }
   img {
     width: 100%;
   }

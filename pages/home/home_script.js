@@ -25,9 +25,12 @@ const sliderData = [
 let allProducts_btns = document.querySelectorAll(".products_btn");
 let allSort_btns = document.querySelectorAll("#sort_btns button");
 let allRange_btns = document.querySelectorAll("#price_range button");
-console.log(allRange_btns);
-
+let logOut_btn = document.querySelector("#logOut");
 let content = document.querySelector(".content");
+
+logOut_btn.addEventListener("click", () => {
+  location.href = "../../index.html";
+});
 
 function renderProducts(products) {
   content.textContent = "";
@@ -183,6 +186,11 @@ function updateActiveCard() {
   fullscreenBg.style.backgroundImage = `url(${sliderData[activeIndex].image})`;
   fullscreenText.innerText = sliderData[activeIndex].details;
 }
+setInterval(() => {
+  activeIndex = (activeIndex + 1) % sliderData.length;
+  updateActiveCard();
+  scrollToCard(activeIndex);
+}, 3000);
 
 function scrollToCard(index) {
   const cardWidth = cards[0].offsetWidth + 16;
