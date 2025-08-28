@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: "Catamaran", "sans-serif";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+}
+body {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+.img {
+  overflow: hidden;
+  &:hover img {
+    scale: 1.2;
+  }
+  img {
+    width: 100%;
+  }
+}
+.navbar {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0 !important;
+  }
+}
+.navbar .navbar-nav .nav-link {
+  color: #000;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    letter-spacing: 0.1em;
+  }
+  .navbar .navbar-nav .nav-link {
+    padding: 0.5em 1em;
+  }
+}
+
+.contact-info p,
+.contact-info a {
+  font-size: 0.9em;
+  padding-right: 1em;
+  color: grey;
+}
+.contact-info a {
+  padding-right: 0;
+}
+
+input,
+button {
+  padding: 10px;
+  text-align: center;
+}
+
+.input-wrapper button {
+  cursor: pointer;
+}
+.input-wrapper button#decrement,
+.input-wrapper button#increment {
+  width: 3rem;
+}
+.input-wrapper button#decrement {
+  color: red;
+}
+
+.input-wrapper button#increment {
+  color: green;
+}
+.shopping {
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0 !important;
+  }
+}
